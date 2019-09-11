@@ -5,8 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sally Student React Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main id="application-root"></main>
+
+
+
+
+
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+        function App() {
+            return (
+                <fragment>
+                <header>
+                    <h1>Sally Student</h1>
+                    <p>Please find my resume below!</p>
+                </header>
+                    <main>
+                        <section>
+                            <h2>Education:</h2>
+                            <h3>The University of Texas</h3>
+                            <ul>
+                            <li>Majored in Computer Science</li>
+                            <li>4.0 GPA</li>
+                            <li>Captain of the Chess Team</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h2>Work Experience:</h2>
+                            <h3>Snow.com</h3>
+                            <p><strong>Job Title:</strong> Web Developer</p>
+                            <p><strong>Date of employment:</strong> 10/12/2012 - 04/16/2014</p>
+                            <p><strong>Description of Duties:</strong> Bacon ipsum dolor amet prosciutto chicken rump ham hock. Alcatra hamburger strip steak, burgdoggen frankfurter tri-tip venison cupim meatball ball tip turducken bacon. Salami biltong porchetta ham hock spare ribs jowl pastrami, tenderloin tri-tip pancetta corned beef chicken rump venison kielbasa. </p>
+                            <br></br>
+                            <h3>University of Texas</h3>
+                            <p><strong>Job Title:</strong> Computer Science Intern</p>
+                            <p><strong>Date of employment:</strong> 09/30/2010 - 09/30/2012</p>
+                            <p><strong>Description of Duties:</strong> Bacon ipsum dolor amet prosciutto chicken rump ham hock. Alcatra hamburger strip steak, burgdoggen frankfurter tri-tip venison cupim meatball ball tip turducken bacon. Salami biltong porchetta ham hock spare ribs jowl pastrami, tenderloin tri-tip pancetta corned beef chicken rump venison kielbasa. </p>
+                        </section>
+                        <section>
+                            <h2>Contact:</h2>
+                            <p>Please feel free to contat me for further information!</p>
+                            <p><strong>Name:</strong> Sally P. Student</p>
+                            <p><strong>Email:</strong><a href='mailto:> Sally_Student_Dev@sprinkles.com'>Sally_Student_Dev@sprinkles.com</a></p>
+                            <p><strong>Phone Number:</strong>512-555-5555</p>
+                            <address>
+                            <p>123 Main Street, Austin Texas, 78701</p>
+                            </address>
+                            <img src='https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg' alt='A Picture of Myself, Sally Student!'></img>
+                        </section>
+                    </main>    
+                    <footer>ⓒSally Student</footer>
+                </fragment>
+            );
+        };
+        ReactDOM.render(<App />, document.querySelector('body'));
+    </script>
 </body>
 </html>
