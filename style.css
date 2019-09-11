@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    border: 1px solid black;
+}
+
+h1 {
+    color: green;
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    height: 300px;
+    width: 200px;
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        padding: 20px 50px;
+    }
+    h1 {
+        color: blue;
+    }
+    img {
+        height: 600px;
+        width: 450px;
+    }
+}
